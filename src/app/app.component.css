@@ -1,0 +1,90 @@
+.spacer {
+  width: 10%;
+}
+
+header {
+  align-content: center;
+  align-items: center;
+  /*background: aliceblue;*/
+  background: linear-gradient(aliceblue 65%, ghostwhite 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.header-top {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    text-align: center;
+    li {
+      margin-right: 1rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.header-bottom {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  width: 100%;
+}
+
+.header-bottom-presentation {
+  text-align: justify;
+  width: 100%;
+  white-space: collapse;
+}
+
+.header-bottom-photo {
+  padding-top: 1%;
+  img {
+    border-radius: 50%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: justify;
+}
+
+footer {
+  /*background: azure;*/
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#about-me, #academic, footer {
+  /*background: ghostwhite;*/
+  background: linear-gradient(ghostwhite 65%, aliceblue 100%);
+}
+
+#skills, #projects {
+  /*background: aliceblue;*/
+  background: linear-gradient(aliceblue 65%, ghostwhite 100%);
+}
