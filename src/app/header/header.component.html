@@ -1,0 +1,52 @@
+<header>
+  <section class="header-top">
+    <a>
+      <button disabled mat-button>Rubber Yunez</button>
+    </a>
+    <span class="spacer"></span>
+    <ul>
+      <li><button mat-button (click)="scrollToAboutMe()">About me</button></li>
+      <li><button mat-button (click)="scrollToSkills()">Skills</button></li>
+      <li><button mat-button (click)="scrollToAcademic()">Academic</button></li>
+      <li><button mat-button (click)="scrollToProjects()">Projects</button></li>
+    </ul>
+  </section>
+  <section class="header-bottom">
+    <div class="header-bottom-presentation">
+      <h1>I'm Rubber Yunez, a web developer</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus eligendi enim excepturi,
+        facilis fugiat harum id, inventore, minus quae quam sapiente vel vitae. Aliquid iure laudantium perferendis
+        possimus quibusdam?</p>
+      <div class="header-bottom-presentation-social">
+        <a href="https://linkedin.com/in/ryunezm" target="_blank">
+          <button mat-button>
+            <div>
+              <img alt="linkedin" height="20" ngSrc="/linkedin.svg" width="20">
+              <span>linkedin ↗️</span>
+            </div>
+          </button>
+        </a>
+        <a href="https://github.com/ryunezm/" target="_blank">
+          <button mat-button>
+            <div>
+              <img alt="github" height="20" ngSrc="/github.svg" width="20">
+              <span>github ↗️</span>
+            </div>
+          </button>
+        </a>
+        <a href="https://threads.net/ryunezm" target="_blank">
+          <button mat-button>
+            <div>
+              <img alt="threads" height="20" ngSrc="/threads.svg" width="20">
+              <span>threads ↗️</span>
+            </div>
+          </button>
+        </a>
+      </div>
+    </div>
+    <span class="spacer"></span>
+    <div class="header-bottom-photo">
+      <img alt="profile photo" height="200" ngSrc="/profile_square.png" width="200">
+    </div>
+  </section>
+</header>
