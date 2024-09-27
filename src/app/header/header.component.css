@@ -52,7 +52,7 @@ header {
   width: 100%;
 }
 
-.header-bottom-presentation-social {
+.header-bottom-social {
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -101,7 +101,34 @@ header {
 }
 
 @media (max-width: 480px) {
+  .header-bottom {
+    all: unset;
+  }
+
   .header-bottom-photo, .header-top > ul {
     display: none;
   }
+
+  .header-bottom-presentation {
+    width: 100%;
+  }
+
+  .header-bottom-social {
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+
+    a {
+      button {
+        div {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+
 }

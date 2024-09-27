@@ -16,7 +16,7 @@ div {
     margin-right: 2vmax;
     margin-left: 2vmax;
     margin-bottom: 4vmax;
-    width: 350px;
+    width: 450px;
 
     mat-card-content {
       div {
@@ -41,7 +41,7 @@ div {
       flex-direction: column;
       justify-content: start;
       justify-items: start;
-      height: 40px;
+      height: 50px;
       width: 100%;
 
       mat-card-title, mat-card-subtitle {
@@ -52,8 +52,6 @@ div {
         margin-right: 10px;
       }
     }
-
-
   }
 
   mat-card:hover {
