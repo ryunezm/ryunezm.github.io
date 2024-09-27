@@ -1,4 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: "Noto Sans", "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "Noto Sans", "Helvetica Neue", sans-serif; background: aliceblue }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: justify;
+}
+
+.spacer {
+  width: 10%;
+}
+
+#about-me, #academic, footer {
+  /*background: ghostwhite;*/
+  background: linear-gradient(ghostwhite 65%, aliceblue 100%);
+}
+
+#skills, #projects {
+  /*background: aliceblue;*/
+  background: linear-gradient(aliceblue 65%, ghostwhite 100%);
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+footer {
+  /*background: azure;*/
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
