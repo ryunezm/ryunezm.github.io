@@ -1,0 +1,15 @@
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+  img {
+    margin-right: 2vmax;
+    margin-left: 2vmax;
+    margin-bottom: 4vmax;
+  }
+}
