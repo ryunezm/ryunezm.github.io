@@ -74,7 +74,7 @@ header {
         display: flex;
 
         img {
-          margin-right: 10px
+          margin-right: 10px;
         }
 
         span {
@@ -97,5 +97,11 @@ header {
     border-radius: 50%;
     padding-top: 5%;
     padding-bottom: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-bottom-photo, .header-top > ul {
+    display: none;
   }
 }

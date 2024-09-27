@@ -17,4 +17,8 @@ import {ProjectsComponent} from "./projects/projects.component";
 })
 export class AppComponent {
   title = 'website-personal';
+
+  ngOnInit() {
+    document.addEventListener('contextmenu', function (event) {event.preventDefault();});
+  }
 }
