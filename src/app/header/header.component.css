@@ -24,6 +24,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
+    opacity: 1;
     text-align: center;
 
     li {
@@ -91,12 +92,14 @@ header {
 }
 
 .header-bottom-photo {
+  max-height: inherit;
   padding-top: 1%;
 
   img {
     border-radius: 50%;
     padding-top: 5%;
     padding-bottom: 15%;
+    transition: 0.3s ease-in-out;
   }
 }
 
@@ -145,7 +148,17 @@ header {
   .header-bottom-photo {
     display: none;
   }
+}
 
+/* Special for links in the header */
+@media (min-aspect-ratio: 3/4) and (max-aspect-ratio:49/50) {
+  .header-top > ul {
+    display: none;
+  }
+}
+
+/* Special for social links */
+@media (min-width: 481px) and (max-width: 527px) {
   .header-bottom-social {
     align-items: center;
     align-content: center;
@@ -161,11 +174,5 @@ header {
         }
       }
     }
-  }
-}
-
-@media (min-aspect-ratio: 3/4) and (max-aspect-ratio:49/50) {
-  .header-top > ul {
-    display: none;
   }
 }

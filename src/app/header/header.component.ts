@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {MatButton} from "@angular/material/button";
-import {NgOptimizedImage, ViewportScroller} from "@angular/common";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-header',
