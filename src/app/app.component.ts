@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {MatButton, MatIconButton} from "@angular/material/button";
 import {NgOptimizedImage} from "@angular/common";
@@ -17,8 +17,33 @@ import {ProjectsComponent} from "./projects/projects.component";
 })
 export class AppComponent {
   title = 'website-personal';
+  showScrollTopButton: boolean = false;
+  buttonVisibility = 'hidden';
 
   ngOnInit() {
-    document.addEventListener('contextmenu', function (event) {event.preventDefault();});
+    document.addEventListener('contextmenu', this.preventDefault);
+  }
+
+  ngOnDestroy() {
+    document.removeEventListener('contextmenu', this.preventDefault);
+  }
+
+  scrollToTop(){
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+    this.showScrollTopButton = scrollPosition > 300;
+    this.buttonVisibility = this.showScrollTopButton ? 'visible' : 'hidden';
+  }
+
+
+  private preventDefault(event: Event) {
+    event.preventDefault();
   }
 }

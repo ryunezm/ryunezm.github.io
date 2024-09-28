@@ -14,22 +14,13 @@ import {NgOptimizedImage, ViewportScroller} from "@angular/common";
 })
 export class HeaderComponent {
 
-  constructor(private viewportScroller: ViewportScroller) {
-  }
-
-  scrollToAboutMe() {
-    this.viewportScroller.scrollToAnchor('about-me');
-  }
-
-  scrollToSkills() {
-    this.viewportScroller.scrollToAnchor('skills');
-  }
-
-  scrollToAcademic() {
-    this.viewportScroller.scrollToAnchor('academic')
-  }
-
-  scrollToProjects() {
-    this.viewportScroller.scrollToAnchor('projects')
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth'
+      });
+    }
   }
 }

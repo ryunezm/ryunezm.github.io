@@ -5,10 +5,18 @@
     </a>
     <span class="spacer"></span>
     <ul>
-      <li><button mat-button (click)="scrollToAboutMe()">About me</button></li>
-      <li><button mat-button (click)="scrollToSkills()">Skills</button></li>
-      <li><button mat-button (click)="scrollToAcademic()">Academic</button></li>
-      <li><button mat-button (click)="scrollToProjects()">Projects</button></li>
+      <li>
+        <button (click)="scrollToSection('about-me')" mat-button>About me</button>
+      </li>
+      <li>
+        <button (click)="scrollToSection('skills')" mat-button>Skills</button>
+      </li>
+      <li>
+        <button (click)="scrollToSection('academic')" mat-button>Academic</button>
+      </li>
+      <li>
+        <button (click)="scrollToSection('projects')" mat-button>Projects</button>
+      </li>
     </ul>
   </section>
   <section class="header-bottom">

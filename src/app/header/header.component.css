@@ -100,6 +100,7 @@ header {
   }
 }
 
+/* Mobile*/
 @media (max-width: 480px) {
   .header-bottom {
     all: unset;
@@ -129,6 +130,42 @@ header {
       }
     }
   }
+}
 
+/* Extra small devices */
+@media (min-width: 481px) and  (max-width: 767px) {
+  .header-bottom {
+    all: unset;
+  }
 
+  .header-bottom-presentation {
+    width: 100%;
+  }
+
+  .header-bottom-photo {
+    display: none;
+  }
+
+  .header-bottom-social {
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+
+    a {
+      button {
+        div {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-aspect-ratio: 3/4) and (max-aspect-ratio:49/50) {
+  .header-top > ul {
+    display: none;
+  }
 }

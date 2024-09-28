@@ -4,4 +4,10 @@
 <app-academic></app-academic>
 <app-projects></app-projects>
 <footer>Developed by Rubber Yunez</footer>
+<button mat-button
+        (click)="scrollToTop()"
+        class="button-to-top"
+        [class.visible]="buttonVisibility==='visible'"
+        [class.hidden]="buttonVisibility==='hidden'">
+  Back to Top</button>
 <router-outlet/>
