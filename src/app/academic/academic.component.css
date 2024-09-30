@@ -11,12 +11,14 @@ div {
     align-content: center;
     align-items: center;
     background-color: rgba(255,255,255, 0.2);
+    border-radius: 0;
+    box-shadow: 0 0 0 0;
     display: flex;
     height: 100%;
     margin-right: 2vmax;
     margin-left: 2vmax;
     margin-bottom: 4vmax;
-    width: 450px;
+    width: 380px;
 
     mat-card-content {
       div {
