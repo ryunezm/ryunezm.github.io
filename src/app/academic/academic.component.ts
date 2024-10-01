@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
-import {MatCard, MatCardContent, MatCardFooter, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
+import {
+  MatCard,
+  MatCardContent,
+  MatCardFooter,
+  MatCardHeader,
+  MatCardSubtitle,
+  MatCardTitle
+} from "@angular/material/card";
 import {NgOptimizedImage} from "@angular/common";
 
 @Component({
@@ -11,7 +18,8 @@ import {NgOptimizedImage} from "@angular/common";
     MatCardFooter,
     MatCardSubtitle,
     NgOptimizedImage,
-    MatCardTitle
+    MatCardTitle,
+    MatCardHeader
   ],
   templateUrl: './academic.component.html',
   styleUrl: './academic.component.css'
