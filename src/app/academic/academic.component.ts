@@ -14,7 +14,6 @@ import {NgOptimizedImage} from "@angular/common";
   standalone: true,
   imports: [
     MatCard,
-    MatCardContent,
     MatCardFooter,
     MatCardSubtitle,
     NgOptimizedImage,
