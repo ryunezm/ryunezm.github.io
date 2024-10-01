@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: "Noto Sans", "Helvetica Neue", sans-serif; background: aliceblue }
+html, body {
+  height: 100%;
+}
+
+body {
+  background: aliceblue;
+  font-family: "Noto Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
 
 .content {
   display: flex;
@@ -31,6 +38,8 @@ a:visited {
 
 footer {
   /*background: azure;*/
+  font-family: "NotoSans NFP", sans-serif;
+  font-weight: bold;
   padding-left: 15%;
   padding-right: 15%;
 }
@@ -38,7 +47,7 @@ footer {
 & mat-card {
   align-content: center;
   align-items: center;
-  background-color: rgba(255,255,255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 0;
   box-shadow: 0 0 0 0;
   display: flex;
@@ -49,19 +58,6 @@ footer {
   min-width: 310px;
 
   & mat-card-content {
-    & div {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-
-      & span {
-        filter: grayscale(100%);
-        font-family: "Noto Sans", sans-serif;
-        font-size: xx-large;
-        margin-right: 10px;
-        margin-left: 10px;
-      }
-    }
   }
 
   & mat-card-footer {
@@ -74,16 +70,36 @@ footer {
     height: 50px;
     width: 100%;
 
-    & mat-card-title, & mat-card-subtitle {
-      color: dimgray;
-      font-family: "NotoSans NFP", sans-serif;
-      font-weight: bold;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
   }
 }
 
 & mat-card:hover {
-  background-color: rgba(255,255,255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+& mat-card-header {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+
+  & span {
+    filter: grayscale(100%);
+    font-family: "Noto Sans", sans-serif;
+    font-size: xx-large;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+& mat-card-title, & mat-card-subtitle {
+  color: dimgray;
+  font-family: "NotoSans NFP", sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
 }
