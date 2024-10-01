@@ -34,3 +34,56 @@ footer {
   padding-left: 15%;
   padding-right: 15%;
 }
+
+& mat-card {
+  align-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 0;
+  box-shadow: 0 0 0 0;
+  display: flex;
+  height: 100%;
+  margin-right: 2vmax;
+  margin-left: 2vmax;
+  margin-bottom: 4vmax;
+  min-width: 310px;
+
+  & mat-card-content {
+    & div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      & span {
+        filter: grayscale(100%);
+        font-family: "Noto Sans", sans-serif;
+        font-size: xx-large;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  & mat-card-footer {
+    align-content: start;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-items: start;
+    height: 50px;
+    width: 100%;
+
+    & mat-card-title, & mat-card-subtitle {
+      color: dimgray;
+      font-family: "NotoSans NFP", sans-serif;
+      font-weight: bold;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+& mat-card:hover {
+  background-color: rgba(255,255,255, 0.8);
+}
