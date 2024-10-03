@@ -7,11 +7,12 @@ import {AboutMeComponent} from "./about-me/about-me.component";
 import {SkillsComponent} from "./skills/skills.component";
 import {AcademicComponent} from "./academic/academic.component";
 import {ProjectsComponent} from "./projects/projects.component";
+import {FooterComponent} from "./footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatButton, NgOptimizedImage, MatIconButton, HeaderComponent, AboutMeComponent, SkillsComponent, AcademicComponent, ProjectsComponent],
+  imports: [RouterOutlet, MatButton, NgOptimizedImage, MatIconButton, HeaderComponent, AboutMeComponent, SkillsComponent, AcademicComponent, ProjectsComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
