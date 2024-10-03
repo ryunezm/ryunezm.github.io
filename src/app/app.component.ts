@@ -1,7 +1,6 @@
 import {Component, HostListener} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {MatButton, MatIconButton} from "@angular/material/button";
-import {NgOptimizedImage} from "@angular/common";
+import {RouterOutlet} from '@angular/router';
+import {MatButton} from "@angular/material/button";
 import {HeaderComponent} from "./header/header.component";
 import {AboutMeComponent} from "./about-me/about-me.component";
 import {SkillsComponent} from "./skills/skills.component";
@@ -12,7 +11,7 @@ import {FooterComponent} from "./footer/footer.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatButton, NgOptimizedImage, MatIconButton, HeaderComponent, AboutMeComponent, SkillsComponent, AcademicComponent, ProjectsComponent, FooterComponent],
+  imports: [RouterOutlet, MatButton, HeaderComponent, AboutMeComponent, SkillsComponent, AcademicComponent, ProjectsComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -29,7 +28,7 @@ export class AppComponent {
     document.removeEventListener('contextmenu', this.preventDefault);
   }
 
-  scrollToTop(){
+  scrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
