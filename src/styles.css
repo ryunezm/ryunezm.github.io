@@ -10,6 +10,16 @@ body {
   margin: 0;
 }
 
+hr {
+  background: linear-gradient(to right, aliceblue, dimgray);
+  border: 0;
+  height: 1px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-top: 0;
+  width: 15vmax;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -37,27 +47,35 @@ a:visited {
 }
 
 footer {
-  /*background: azure;*/
-  font-family: "NotoSans NFP", sans-serif;
-  font-weight: bold;
+  /*background: linear-gradient(to bottom, aliceblue, ghostwhite);*/
+  display: flex;
+  margin-top: 20px;
   padding-left: 15%;
   padding-right: 15%;
+  height: 100px;
+
+  & p {
+    font-family: "NotoSans NFP", monospace;
+    font-weight: bold;
+  }
 }
 
 & mat-card {
   align-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(215, 215, 215, 0.2);
   border-radius: 0;
   box-shadow: 0 0 0 0;
   display: flex;
   height: 100%;
-  margin-right: 2vmax;
-  margin-left: 2vmax;
-  margin-bottom: 4vmax;
-  min-width: 310px;
+  margin-right: 1.5vmax;
+  margin-left: 1.5vmax;
+  margin-bottom: 2vmax;
+  min-width: 300px;
+  padding-top: 1vmax;
 
   & mat-card-content {
+    padding: 1vmax 1vmax;
   }
 
   & mat-card-footer {
@@ -103,3 +121,5 @@ footer {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+

@@ -1,0 +1,22 @@
+.project-content-container {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+}
+
+.project-content {
+  & mat-card {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    min-height: 300px;
+
+    & mat-card-content {
+      flex-grow: 1;
+    }
+  }
+}
