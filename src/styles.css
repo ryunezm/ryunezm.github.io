@@ -55,8 +55,14 @@ footer {
   height: 100px;
 
   & p {
+    display: flex;
+    align-content: center;
+    align-items: center;
     font-family: "NotoSans NFP", monospace;
     font-weight: bold;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
   }
 }
 
