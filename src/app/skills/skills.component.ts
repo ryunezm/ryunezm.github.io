@@ -9,8 +9,6 @@ import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/mat
     NgOptimizedImage,
     MatCard,
     MatCardContent,
-    MatCardHeader,
-    MatCardTitle
   ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
