@@ -57,6 +57,7 @@ footer > p {
   align-items: center;
   font-family: "Noto Sans Mono", monospace;
   font-weight: bold;
+  font-size: small;
   justify-content: center;
   justify-items: center;
   width: 100%;
