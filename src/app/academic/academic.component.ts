@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {
-  MatCard,
+  MatCard, MatCardContent,
   MatCardFooter,
   MatCardHeader,
   MatCardSubtitle,
@@ -17,7 +17,8 @@ import {NgOptimizedImage} from "@angular/common";
     MatCardSubtitle,
     NgOptimizedImage,
     MatCardTitle,
-    MatCardHeader
+    MatCardHeader,
+    MatCardContent
   ],
   templateUrl: './academic.component.html',
   styleUrl: './academic.component.css'
