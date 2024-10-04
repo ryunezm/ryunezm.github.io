@@ -9,14 +9,15 @@
 }
 
 .project-content {
-  & mat-card {
+  :is(mat-card) {
     display: flex;
     flex-direction: column;
     width: 310px;
-    min-height: 480px;
+    min-height: 410px;
 
-    & mat-card-content {
+    :is(span) {
       flex-grow: 1;
+      background-color: #0B7CF7;
     }
   }
 }
