@@ -92,6 +92,7 @@ header {
 }
 
 .header-bottom-photo {
+  margin-left: 15px;
   max-height: inherit;
   padding-top: 1%;
 
