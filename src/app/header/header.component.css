@@ -19,7 +19,7 @@ header {
   text-align: center;
   width: 100%;
 
-  ul {
+  :is(ul) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -27,10 +27,10 @@ header {
     opacity: 1;
     text-align: center;
 
-    li {
+    :is(li) {
       margin-right: 1rem;
 
-      a {
+      :is(a) {
         text-decoration: none;
       }
     }
@@ -59,10 +59,10 @@ header {
   justify-content: end;
   width: 100%;
 
-  a {
+  :is(a) {
     text-decoration: none;
 
-    button {
+    :is(button) {
       align-content: center;
       align-items: center;
       display: flex;
@@ -71,14 +71,14 @@ header {
       justify-items: center;
       text-align: center;
 
-      div {
+      :is(div) {
         display: flex;
 
-        img {
+        :is(img) {
           margin-right: 10px;
         }
 
-        span {
+        :is(span) {
           display: inline-flex;
           align-items: center;
           align-content: center;
@@ -95,7 +95,7 @@ header {
   max-height: inherit;
   padding-top: 1%;
 
-  img {
+  :is(img) {
     border-radius: 50%;
     padding-top: 5%;
     padding-bottom: 15%;
@@ -123,10 +123,10 @@ header {
     justify-items: center;
     justify-content: center;
 
-    a {
-      button {
-        div {
-          span {
+    :is(a) {
+      :is(button) {
+        :is(div) {
+          :is(span) {
             display: none;
           }
         }
@@ -151,7 +151,7 @@ header {
 }
 
 /* Special for links in the header */
-@media (min-aspect-ratio: 3/4) and (max-aspect-ratio:49/50) {
+@media (min-aspect-ratio: 3/4) and (max-aspect-ratio: 49/50) {
   .header-top > ul {
     display: none;
   }
@@ -165,10 +165,10 @@ header {
     justify-items: center;
     justify-content: center;
 
-    a {
-      button {
-        div {
-          span {
+    :is(a) {
+      :is(button) {
+        :is(div) {
+          :is(span) {
             display: none;
           }
         }

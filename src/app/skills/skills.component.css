@@ -1,16 +1,26 @@
 div {
+  align-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
   justify-content: center;
   justify-items: center;
+  width: 100%;
+}
 
-  img {
-    margin-right: 2vmax;
-    margin-left: 2vmax;
-    margin-bottom: 4vmax;
-  }
+div > img {
+  margin: 2vmax 1.5vmax;
+}
+
+div > div {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 10px 10px;
+  outline: 1px solid black;
+
 }
 
