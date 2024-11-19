@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {
-  MatCard, MatCardContent,
+  MatCard,
+  MatCardContent,
   MatCardFooter,
-  MatCardHeader,
   MatCardSubtitle,
   MatCardTitle
 } from "@angular/material/card";
@@ -16,9 +16,9 @@ import {NgOptimizedImage} from "@angular/common";
         MatCardSubtitle,
         NgOptimizedImage,
         MatCardTitle,
-        MatCardHeader,
         MatCardContent
     ],
+    standalone: true,
     templateUrl: './academic.component.html',
     styleUrl: './academic.component.css'
 })
