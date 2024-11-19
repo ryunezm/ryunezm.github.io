@@ -9,19 +9,18 @@ import {
 import {NgOptimizedImage} from "@angular/common";
 
 @Component({
-  selector: 'app-academic',
-  standalone: true,
-  imports: [
-    MatCard,
-    MatCardFooter,
-    MatCardSubtitle,
-    NgOptimizedImage,
-    MatCardTitle,
-    MatCardHeader,
-    MatCardContent
-  ],
-  templateUrl: './academic.component.html',
-  styleUrl: './academic.component.css'
+    selector: 'app-academic',
+    imports: [
+        MatCard,
+        MatCardFooter,
+        MatCardSubtitle,
+        NgOptimizedImage,
+        MatCardTitle,
+        MatCardHeader,
+        MatCardContent
+    ],
+    templateUrl: './academic.component.html',
+    styleUrl: './academic.component.css'
 })
 export class AcademicComponent {
 

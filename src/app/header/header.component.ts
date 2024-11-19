@@ -3,14 +3,13 @@ import {MatButton} from "@angular/material/button";
 import {NgOptimizedImage} from "@angular/common";
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [
-    MatButton,
-    NgOptimizedImage
-  ],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+    selector: 'app-header',
+    imports: [
+        MatButton,
+        NgOptimizedImage
+    ],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.css'
 })
 export class HeaderComponent {
 

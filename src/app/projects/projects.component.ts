@@ -3,18 +3,17 @@ import {MatCard, MatCardActions, MatCardContent, MatCardSubtitle, MatCardTitle} 
 import {MatButton} from "@angular/material/button";
 
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [
-    MatCard,
-    MatCardContent,
-    MatCardActions,
-    MatCardTitle,
-    MatCardSubtitle,
-    MatButton
-  ],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+    selector: 'app-projects',
+    imports: [
+        MatCard,
+        MatCardContent,
+        MatCardActions,
+        MatCardTitle,
+        MatCardSubtitle,
+        MatButton
+    ],
+    templateUrl: './projects.component.html',
+    styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
 
