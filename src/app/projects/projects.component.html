@@ -2,97 +2,31 @@
   <h1>Projects</h1>
   <hr>
   <div class="project-content-container">
-    <div class="project-content">
-      <mat-card>
-        <mat-card-title>Movie cataloguer</mat-card-title>
-        <mat-card-subtitle>#Java♨️ #SpringBoot🍃 #MongoDB📃 #Angular🅰️</mat-card-subtitle>
-        <mat-card-content>
-          <p>
-            This is a movie cataloging project developed using Java 11+, Spring Boot, MongoDB (back-end)
-            and Angular (front-end). It allows you to register movies and assign them a custom score
-            on a scale from 0 to 10.</p>
-        </mat-card-content>
-        <span></span>
-        <mat-card-actions>
-          <a href="https://github.com/ryunezm/papsukkal"
-             target="_blanck">
-            <button mat-button>Repository</button>
-          </a>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-
-    <div class="project-content">
-      <mat-card>
-        <mat-card-title>Text encrypter</mat-card-title>
-        <mat-card-subtitle>#HTML📑 #CSS🎨 #JavaScript💡</mat-card-subtitle>
-        <mat-card-content>
-          <p>
-            An application for encrypting and decrypting text using predefined rules. Works with lowercase letters only,
-            excluding accented characters and special symbols. Users input text and choose between encryption or
-            decryption.
-          </p>
-        </mat-card-content>
-        <span></span>
-        <mat-card-actions>
-          <a href="https://github.com/ryunezm/EncriptadorTextoHTML"
-             target="_blank">
-            <button mat-button>Repository</button>
-          </a>
-          <a href="https://ryunezm.github.io/EncriptadorTextoHTML"
-             target="_blank">
-            <button mat-button>Demo</button>
-          </a>
-
-        </mat-card-actions>
-      </mat-card>
-    </div>
-
-    <div class="project-content">
-      <mat-card>
-        <mat-card-title>Units converter</mat-card-title>
-        <mat-card-subtitle>#Java♨️</mat-card-subtitle>
-        <mat-card-content>
-          <p>
-            This project is a unit conversion application that provides functionality to convert between different types
-            of units, such as currency, length, mass, temperature and time. It's implemented in Java and uses
-            enumerations to represent each unit type. It includes a user interface built with Java Swing for easy user
-            interaction.
-          </p>
-        </mat-card-content>
-        <span></span>
-        <mat-card-actions>
-          <a href="https://github.com/ryunezm/Unit_Converter"
-             target="_blank">
-            <button mat-button>Repository</button>
-          </a>
-          <a href="https://github.com/ryunezm/Unit_Converter/releases/download/v0.0.1-alpha/JavaCurrencyConverter.jar"
-             target="_blank">
-            <button mat-button>Download preview</button>
-          </a>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-
-    <div class="project-content">
-      <mat-card>
-        <mat-card-title>LeetCode's problems solved in Rust</mat-card-title>
-        <mat-card-subtitle>#Rust🦀 #InProgress🔜</mat-card-subtitle>
-        <mat-card-content>
-          <p>
-            Series of exercises solved in Rust, for now, the easy ones, as I become more familiar with this lovely
-            language.
-          </p>
-        </mat-card-content>
-        <span></span>
-        <mat-card-actions>
-          <a href="https://github.com/ryunezm/leetcode_rust"
-             target="_blank">
-            <button mat-button>Repository</button>
-          </a>
-
-        </mat-card-actions>
-      </mat-card>
-    </div>
+    @for (project of projects; track project) {
+      <div class="project-content">
+        <mat-card>
+          <mat-card-title>{{ projectDetails[project].title }}</mat-card-title>
+          <mat-card-subtitle>{{ projectDetails[project].tags.join(' ') }}</mat-card-subtitle>
+          <mat-card-content>
+            <p>{{ projectDetails[project].description }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a [href]="projectDetails[project].repository" target="_blank">
+              <button mat-button>Repository</button>
+            </a>
+            @if (projectDetails[project].demo) {
+              <a [href]="projectDetails[project].demo" target="_blank">
+                <button mat-button>Demo</button>
+              </a>
+            }
+            @if (projectDetails[project].downloadPreview) {
+              <a [href]="projectDetails[project].downloadPreview" target="_blank">
+                <button mat-button>Download preview</button>
+              </a>
+            }
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    }
   </div>
 </section>

@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {MatCard, MatCardActions, MatCardContent, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
 import {MatButton} from "@angular/material/button";
+import {Projects, PROJECT_DETAILS} from "./projects.enum";
 
 @Component({
     selector: 'app-projects',
@@ -16,5 +17,7 @@ import {MatButton} from "@angular/material/button";
     styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
+  projects = Object.values(Projects)
+  projectDetails = PROJECT_DETAILS;
 
 }
