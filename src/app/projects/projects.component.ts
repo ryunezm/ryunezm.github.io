@@ -2,17 +2,20 @@ import {Component} from '@angular/core';
 import {MatCard, MatCardActions, MatCardContent, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
 import {MatButton} from "@angular/material/button";
 import {Projects, PROJECT_DETAILS} from "./projects.enum";
+import {MatChip, MatChipSet} from "@angular/material/chips";
 
 @Component({
     selector: 'app-projects',
-    imports: [
-        MatCard,
-        MatCardContent,
-        MatCardActions,
-        MatCardTitle,
-        MatCardSubtitle,
-        MatButton
-    ],
+  imports: [
+    MatCard,
+    MatCardContent,
+    MatCardActions,
+    MatCardTitle,
+    MatCardSubtitle,
+    MatButton,
+    MatChipSet,
+    MatChip
+  ],
     templateUrl: './projects.component.html',
     styleUrl: './projects.component.css'
 })

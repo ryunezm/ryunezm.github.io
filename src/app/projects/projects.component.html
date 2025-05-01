@@ -6,7 +6,14 @@
       <div class="project-content">
         <mat-card>
           <mat-card-title>{{ projectDetails[project].title }}</mat-card-title>
-          <mat-card-subtitle>{{ projectDetails[project].tags.join(' ') }}</mat-card-subtitle>
+          <mat-card-subtitle>
+            <mat-chip-set>
+              @for (tag of projectDetails[project].tags; track tag) {
+                <mat-chip>{{tag}}</mat-chip>
+              }
+            </mat-chip-set>
+
+          </mat-card-subtitle>
           <mat-card-content>
             <p>{{ projectDetails[project].description }}</p>
           </mat-card-content>

@@ -12,7 +12,7 @@
   :is(mat-card) {
     display: flex;
     flex-direction: column;
-    width: 310px;
+    width: 30vmax;
 
     :is(span) {
       flex-grow: 1;

@@ -3,7 +3,6 @@ import {
   MatCard,
   MatCardContent,
   MatCardFooter,
-  MatCardSubtitle,
   MatCardTitle
 } from "@angular/material/card";
 import {NgOptimizedImage} from "@angular/common";
@@ -13,7 +12,6 @@ import {NgOptimizedImage} from "@angular/common";
     imports: [
         MatCard,
         MatCardFooter,
-        MatCardSubtitle,
         NgOptimizedImage,
         MatCardTitle,
         MatCardContent
