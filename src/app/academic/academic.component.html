@@ -5,7 +5,12 @@
     <mat-card>
       <mat-card-content>
         <div class="mat-card-content-box">
-          <img alt="Unicartagena" height="70" ngSrc="/logos/unicartagena.png" priority width="160">
+          <img [ngSrc]="'/logos/unicartagena.png'"
+               [title]="'Universidad de Cartagena'"
+               alt="Unicartagena"
+               height="70"
+               priority
+               width="160">
         </div>
       </mat-card-content>
       <mat-card-footer>
@@ -16,8 +21,16 @@
     <mat-card>
       <mat-card-content>
         <div class="mat-card-content-box">
-          <img alt="UIS" height="70" ngSrc="/logos/uis.svg" width="143">
-          <img alt="MinTic" height="70" ngSrc="/logos/mintic_dark.svg" width="38.5">
+          <img [ngSrc]="'/logos/uis.svg'"
+               [title]="'Universidad Industrial de Santander'"
+               alt="UIS"
+               height="70"
+               width="143">
+          <img [ngSrc]="'/logos/mintic_dark.svg'"
+               [title]="'Ministerio de Tecnologías de la Información y Comunicaciones'"
+               alt="MinTic"
+               height="70"
+               width="38.5">
         </div>
       </mat-card-content>
       <mat-card-footer>
