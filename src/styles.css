@@ -37,7 +37,7 @@ footer > p {
 
 h1 {
   margin-bottom: 0.5vmax;
-  font-size: xx-large;
+  font-size: xxx-large;
 }
 
 header {
@@ -150,6 +150,11 @@ mat-card > mat-card-title {
 #skills, #projects {
   /*background: aliceblue;*/
   background: linear-gradient(aliceblue 65%, ghostwhite 100%);
+}
+
+.content > p,
+section >  div > p {
+  font-size: x-large;
 }
 
 .header-top {
