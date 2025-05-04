@@ -1,5 +1,6 @@
 export enum Projects {
   MovieCataloguer = 'MovieCataloguer',
+  Ninshubur = 'Ninshubur',
   Papsukkal = 'MovieCataloguerJavaSwing',
   TextEncrypter = 'TextEncrypter',
   UnitsConverter = 'UnitsConverter',
@@ -43,8 +44,16 @@ export const PROJECT_DETAILS: Record<Projects, {
 
   [Projects.Papsukkal]: {
     title: "Papsukkal",
-    tags: ['Java ♨️'],
+    tags: ['Java ♨️', 'H2 🗄️'],
     description: 'Small experiment of a local application (movie cataloguer) using Java and part of Spring Boot to simplify the database part (H2).',
     repository: 'https://github.com/ryunezm/papsukkal_javaswing'
+  },
+  [Projects.Ninshubur]: {
+    title: "Ninshubur",
+    tags: ['Java ♨️', 'Spring Boot 🍃', 'PostgreSQL 🐘'],
+    description: 'Restaurant management system: allows customers to place orders, employees to manage them, and administrators to monitor users and the menu. Includes JWT authentication, role control, automated testing and clean, layer-based architecture.',
+    repository: "https://github.com/ryunezm/Ninshubur",
+    demo: undefined,
+    downloadPreview: undefined
   }
 };
