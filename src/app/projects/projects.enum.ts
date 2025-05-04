@@ -1,7 +1,7 @@
 export enum Projects {
-  MovieCataloguer = 'MovieCataloguer',
+  Papsukkal = 'Papsukkal',
   Ninshubur = 'Ninshubur',
-  Papsukkal = 'MovieCataloguerJavaSwing',
+  Papsukkal_Experiment = 'MovieCataloguerJavaSwing',
   TextEncrypter = 'TextEncrypter',
   UnitsConverter = 'UnitsConverter',
   LeetCodeRust = 'LeetCodeRust',
@@ -15,8 +15,8 @@ export const PROJECT_DETAILS: Record<Projects, {
   demo?: string;
   downloadPreview?: string;
 }> = {
-  [Projects.MovieCataloguer]: {
-    title: 'Movie cataloguer',
+  [Projects.Papsukkal]: {
+    title: 'Papsukkal',
     tags: ['Java ♨️', 'Spring Boot 🍃', 'MongoDB 📃', 'Angular 🅰️'],
     description: 'This is a movie cataloging project developed using Java 11+, Spring Boot, MongoDB (back-end) and Angular (front-end). It allows you to register movies and assign them a custom score on a scale from 0 to 10.',
     repository: 'https://github.com/ryunezm/papsukkal',
@@ -42,8 +42,8 @@ export const PROJECT_DETAILS: Record<Projects, {
     repository: 'https://github.com/ryunezm/leetcode_rust',
   },
 
-  [Projects.Papsukkal]: {
-    title: "Papsukkal",
+  [Projects.Papsukkal_Experiment]: {
+    title: "Papsukkal (Experiment)",
     tags: ['Java ♨️', 'H2 🗄️'],
     description: 'Small experiment of a local application (movie cataloguer) using Java and part of Spring Boot to simplify the database part (H2).',
     repository: 'https://github.com/ryunezm/papsukkal_javaswing'
