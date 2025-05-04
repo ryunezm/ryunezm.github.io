@@ -134,14 +134,6 @@ mat-card > mat-card-title {
   margin: 0.1vmax 1vmax !important;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  padding-left: 15%;
-  padding-right: 15%;
-  text-align: justify;
-}
-
 #about-me, #academic, footer {
   /*background: ghostwhite;*/
   background: linear-gradient(ghostwhite 65%, aliceblue 100%);
@@ -150,6 +142,22 @@ mat-card > mat-card-title {
 #skills, #projects {
   /*background: aliceblue;*/
   background: linear-gradient(aliceblue 65%, ghostwhite 100%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: justify;
+  :is(li) {
+    color: #3C3C3CFF;
+    font-size: x-large;
+    margin-left: 4vmax;
+    margin-bottom: 1vmax;
+    list-style-type: none;
+  }
+
 }
 
 .content > p,
