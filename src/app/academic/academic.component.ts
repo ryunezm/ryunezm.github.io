@@ -1,10 +1,5 @@
 import {Component} from '@angular/core';
-import {
-  MatCard,
-  MatCardContent,
-  MatCardFooter,
-  MatCardTitle
-} from "@angular/material/card";
+import {MatCard, MatCardContent, MatCardFooter, MatCardTitle} from "@angular/material/card";
 import {NgOptimizedImage} from "@angular/common";
 
 @Component({
