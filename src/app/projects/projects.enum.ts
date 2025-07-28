@@ -1,5 +1,5 @@
 export enum Projects {
-  Enlil = 'Enlol'
+  Enlil = 'Enlil',
   Papsukkal = 'Papsukkal',
   Ninshubur = 'Ninshubur',
   Papsukkal_Experiment = 'MovieCataloguerJavaSwing',
