@@ -1,4 +1,5 @@
 export enum Projects {
+  Enlil = 'Enlol'
   Papsukkal = 'Papsukkal',
   Ninshubur = 'Ninshubur',
   Papsukkal_Experiment = 'MovieCataloguerJavaSwing',
@@ -54,6 +55,14 @@ export const PROJECT_DETAILS: Record<Projects, {
     description: 'Restaurant management system: allows customers to place orders, employees to manage them, and administrators to monitor users and the menu. Includes JWT authentication, role control, automated testing and clean, layer-based architecture.',
     repository: "https://github.com/ryunezm/Ninshubur",
     demo: undefined,
+    downloadPreview: undefined
+  },
+  [Projects.Enlil]: {
+    title: "Enlil",
+    tags: ['Angular 🅰️'],
+    description: 'Small weather app using Nominatim and OpenWeather APIs.',
+    repository: "https://github.com/ryunezm/enlil",
+    demo: "https://ryunezm.github.io/enlil",
     downloadPreview: undefined
   }
 };
