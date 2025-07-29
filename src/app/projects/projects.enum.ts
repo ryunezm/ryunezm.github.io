@@ -60,7 +60,7 @@ export const PROJECT_DETAILS: Record<Projects, {
   [Projects.Enlil]: {
     title: "Enlil",
     tags: ['Angular 🅰️'],
-    description: 'Small weather app using Nominatim and OpenWeather APIs.',
+    description: 'This one is a small weather app using Nominatim and OpenWeather APIs.',
     repository: "https://github.com/ryunezm/enlil",
     demo: "https://ryunezm.github.io/enlil",
     downloadPreview: undefined

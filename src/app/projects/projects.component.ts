@@ -14,8 +14,8 @@ import {MatChip, MatChipSet} from "@angular/material/chips";
     MatCardSubtitle,
     MatButton,
     MatChipSet,
-    MatChip
-  ],
+    MatChip,
+],
     templateUrl: './projects.component.html',
     styleUrl: './projects.component.css'
 })

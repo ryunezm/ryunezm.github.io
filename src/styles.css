@@ -6,7 +6,7 @@ html, body {
 
 body {
   background: aliceblue;
-  font-family: "Noto Sans", "Helvetica Neue", sans-serif;
+  font-family: "Google Sans Code", "Noto Sans", "Helvetica Neue", sans-serif;
   margin: 0;
 }
 
@@ -27,7 +27,7 @@ footer > p {
   display: flex;
   align-content: center;
   align-items: center;
-  font-family: "Noto Sans Mono", monospace;
+  font-family: "Google Sans Code" "Noto Sans Mono", monospace;
   font-weight: bolder;
   font-size: medium;
   justify-content: center;
@@ -98,7 +98,7 @@ mat-card > mat-card-content > img {
 
 mat-card > mat-card-content > p,
 section > p {
-  /*font-family: "Noto Sans Mono", sans-serif !important;*/
+  font-family: "Google Sans Code", "Noto Sans Mono", sans-serif !important;
   font-size: medium;
   color: #3C3C3CFF;
   margin-right: 15px;
@@ -265,6 +265,62 @@ section >  div > p {
   }
 }
 
+/* Two columns */
+/*
+.project-content-container {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+
+  .project-content {
+    display: flex;
+    flex: 1 1 300px;
+    
+    :is(mat-card) {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      max-width: fit-content;
+
+      :is(mat-card-content) {
+        flex-grow: 1;
+      }
+
+      :is(span) {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+*/
+
+.project-content-container {
+  display: grid;
+  gap: 2.5vmax;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 20px 10px;
+  
+
+  .project-content {
+    display: flex;
+
+    :is(mat-card) {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+
+      :is(mat-card-content) {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+
 /* Mobile*/
 @media (max-width: 480px) {
   .header-bottom {
@@ -310,12 +366,20 @@ section >  div > p {
   .header-bottom-photo {
     display: none;
   }
+
+  .project-content {
+    flex: 1 1 100%;
+  }
 }
 
 /* Special for links in the header */
 @media (min-aspect-ratio: 3/4) and (max-aspect-ratio: 49/50) {
   .header-top > ul {
     display: none;
+  }
+  .project-content {
+    flex: 1 1 100%;
+    outline: 10px solid black;
   }
 }
 
@@ -336,6 +400,9 @@ section >  div > p {
         }
       }
     }
+  }
+  .project-content {
+    flex: 1 1 100%;
   }
 }
 
