@@ -1,11 +1,13 @@
 import {Component} from '@angular/core';
 import {MatButton} from "@angular/material/button";
 import {NgOptimizedImage} from "@angular/common";
+import {MatIcon} from '@angular/material/icon';
 
 @Component({
     selector: 'app-header',
     imports: [
         MatButton,
+        MatIcon,
         NgOptimizedImage
     ],
     templateUrl: './header.component.html',

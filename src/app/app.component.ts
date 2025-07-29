@@ -17,7 +17,6 @@ import {MatIconModule} from '@angular/material/icon'
       AcademicComponent,
       FooterComponent,
       HeaderComponent,
-      MatButton,
       MatIconModule,
       ProjectsComponent,
       SkillsComponent],

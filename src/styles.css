@@ -160,7 +160,7 @@ footer > p {
 
 .content {
   align-content: center;
-  align-items: center;
+  align-items: start;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -555,11 +555,6 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
   }
 }
 
-@media (min-width: 486px) and (max-width: 767px) {
-  
-  
-}
-
 /* Special for links in the header */
 @media (min-aspect-ratio: 3/4) and (max-aspect-ratio: 49/50) {
   .header-top > ul {
@@ -615,7 +610,7 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
   }
 }
 
-
+/* Special for aspects ratios between 0.749 and 1*/
 @media (aspect-ratio <= 749/1000) and (aspect-ratio < 1/1) and (orientation: portrait) {
   .header-top > ul {
     display: none;

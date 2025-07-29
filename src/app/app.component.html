@@ -4,8 +4,10 @@
 <app-academic></app-academic>
 <app-projects></app-projects>
 <app-footer></app-footer>
-<button mat-button
+<button matFab
+        class="mat-fab-large"
         (click)="scrollToTop()"
+        aria-label="Back to top"
         class="button-to-top"
         [class.visible]="buttonVisibility==='visible'"
         [class.hidden]="buttonVisibility==='hidden'">
