@@ -54,7 +54,7 @@ body {
   margin: 0;
 }
 
-/* Establecer Google Sans Code como fuente por defecto para todos los elementos */
+/* Set Google Sans Code as the default font for all elements */
 * {
   font-family: "Google Sans Code", "Noto Sans", "Helvetica Neue", sans-serif;
 }
@@ -159,8 +159,12 @@ footer > p {
 }
 
 .content {
+  align-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  justify-items: center;
   padding-left: 15%;
   padding-right: 15%;
   text-align: justify;
@@ -415,8 +419,8 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
 .project-content-container {
   display: grid;
   gap: 2.5vmax;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  padding: 20px 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /*padding: 20px 10px;*/
 }
 
 .project-content {
@@ -438,17 +442,18 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
    =========================== */
 
 .button-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s ease-in-out;
-  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: var(--card-bg) !important;
+  border: none !important;
+  border-radius: 50px !important;
+  bottom: 20px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+  cursor: pointer !important;
+  left: 50% !important;
+  position: fixed !important;
+  transform: -50% !important;
+  transition: opacity 0.3s ease-in-out !important;
+  z-index: 1000 !important;
 }
 
 .button-to-top:hover {
@@ -470,10 +475,6 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
 
 /* Mobile - Ocultar botón de tema */
 @media (max-width: 480px) {
-  .theme-toggle {
-    /*display: none; /* Ocultar botón de tema en móviles */
-  }
-
   .header-bottom {
     all: unset;
   }
@@ -499,10 +500,9 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
   }
 
   .project-content-container {
-    display: grid;
     gap: 2.5vmax;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
-    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .project-content {
@@ -522,10 +522,6 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
 
 /* Extra small devices */
 @media (min-width: 481px) and (max-width: 767px) {
-  .theme-toggle {
-    /*display: none; /* Ocultar botón de tema en tablets pequeñas */
-  }
-
   .header-bottom {
     all: unset;
   }
@@ -542,8 +538,6 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
     display: grid;
     gap: 2.5vmax;
     grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
-    padding: 20px 10px;
-    margin-left: -20px;
   }
 
   .project-content {
@@ -561,12 +555,13 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
   }
 }
 
+@media (min-width: 486px) and (max-width: 767px) {
+  
+  
+}
+
 /* Special for links in the header */
 @media (min-aspect-ratio: 3/4) and (max-aspect-ratio: 49/50) {
-  .theme-toggle {
-    /*display: none; /* Ocultar botón de tema en tablets pequeñas */
-  }
-
   .header-top > ul {
     display: none;
   }
@@ -575,7 +570,6 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
     display: grid;
     gap: 2.5vmax;
     grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
-    padding: 20px 10px;
   }
 
   .project-content {
@@ -606,13 +600,6 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
     display: none;
   }
 
-  .project-content-container {
-    display: grid;
-    gap: 2.5vmax;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    padding: 20px 10px;
-  }
-
   .project-content {
     display: flex;
   }
@@ -625,5 +612,12 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
 
   .project-content :is(mat-card-content) {
     flex-grow: 1;
+  }
+}
+
+
+@media (aspect-ratio <= 749/1000) and (aspect-ratio < 1/1) and (orientation: portrait) {
+  .header-top > ul {
+    display: none;
   }
 }

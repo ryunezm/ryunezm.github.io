@@ -7,10 +7,20 @@ import {SkillsComponent} from "./skills/skills.component";
 import {AcademicComponent} from "./academic/academic.component";
 import {ProjectsComponent} from "./projects/projects.component";
 import {FooterComponent} from "./footer/footer.component";
+import {MatIconModule} from '@angular/material/icon'
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, MatButton, HeaderComponent, AboutMeComponent, SkillsComponent, AcademicComponent, ProjectsComponent, FooterComponent],
+    imports: [
+      AboutMeComponent,
+      RouterOutlet,
+      AcademicComponent,
+      FooterComponent,
+      HeaderComponent,
+      MatButton,
+      MatIconModule,
+      ProjectsComponent,
+      SkillsComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })
