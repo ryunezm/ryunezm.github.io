@@ -3,7 +3,9 @@
     <a>
       <button disabled mat-button>Rubber Yunez</button>
     </a>
-    <span class="spacer"></span>
+    <span class="spacer">
+      <button class="theme-toggle" (click)="toggleTheme()">{{ isDarkMode ? '' : '' }}</button>
+    </span>
     <ul>
       <li>
         <button (click)="scrollToSection('about-me')" mat-button>About me</button>
@@ -16,9 +18,6 @@
       </li>
       <li>
         <button (click)="scrollToSection('projects')" mat-button>Projects</button>
-      </li>
-      <li>
-        <button class="theme-toggle" (click)="toggleTheme()">{{ isDarkMode ? '' : '' }}</button>
       </li>
     </ul>
   </section>
