@@ -13,6 +13,8 @@ import {NgOptimizedImage} from "@angular/common";
 })
 export class HeaderComponent {
 
+  isDarkMode = false;
+
   scrollToSection(sectionId: string) {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -22,4 +24,11 @@ export class HeaderComponent {
       });
     }
   }
+
+  toggleTheme() {
+        this.isDarkMode = !this.isDarkMode;
+        const newTheme = this.isDarkMode ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    }
 }

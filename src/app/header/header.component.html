@@ -17,6 +17,9 @@
       <li>
         <button (click)="scrollToSection('projects')" mat-button>Projects</button>
       </li>
+      <li>
+        <button class="theme-toggle" (click)="toggleTheme()">{{ isDarkMode ? '' : '' }}</button>
+      </li>
     </ul>
   </section>
   <section class="header-bottom">
