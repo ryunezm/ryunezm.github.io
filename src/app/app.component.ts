@@ -1,6 +1,5 @@
 import {Component, HostListener} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {MatButton} from "@angular/material/button";
 import {HeaderComponent} from "./header/header.component";
 import {AboutMeComponent} from "./about-me/about-me.component";
 import {SkillsComponent} from "./skills/skills.component";
@@ -10,18 +9,18 @@ import {FooterComponent} from "./footer/footer.component";
 import {MatIconModule} from '@angular/material/icon'
 
 @Component({
-    selector: 'app-root',
-    imports: [
-      AboutMeComponent,
-      RouterOutlet,
-      AcademicComponent,
-      FooterComponent,
-      HeaderComponent,
-      MatIconModule,
-      ProjectsComponent,
-      SkillsComponent],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.css'
+  selector: 'app-root',
+  imports: [
+    AboutMeComponent,
+    RouterOutlet,
+    AcademicComponent,
+    FooterComponent,
+    HeaderComponent,
+    MatIconModule,
+    ProjectsComponent,
+    SkillsComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   showScrollTopButton: boolean = false;
@@ -42,9 +41,12 @@ export class AppComponent {
     });
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
   onScroll() {
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollPosition =
+      window.scrollY ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop;
     this.showScrollTopButton = scrollPosition > 300;
     this.buttonVisibility = this.showScrollTopButton ? 'visible' : 'hidden';
   }

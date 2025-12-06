@@ -2,44 +2,44 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-  xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-  width="102.3716mm"
   height="144.49777mm"
-  viewBox="0 0 362.73401 511.99998"
   id="svg3476"
-  version="1.1"
   inkscape:version="0.91 r13725"
-  sodipodi:docname="CSS3.svg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  sodipodi:docname="CSS3.svg"
+  version="1.1"
+  viewBox="0 0 362.73401 511.99998"
+  width="102.3716mm"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
   <defs
     id="defs3478"/>
   <sodipodi:namedview
-    id="base"
-    pagecolor="#ffffff"
     bordercolor="#666666"
     borderopacity="1.0"
-    inkscape:pageopacity="0.0"
-    inkscape:pageshadow="2"
-    inkscape:zoom="0.35"
+    fit-margin-bottom="0"
+    fit-margin-left="0"
+    fit-margin-right="0"
+    fit-margin-top="0"
+    id="base"
+    inkscape:current-layer="layer1"
     inkscape:cx="181.367"
     inkscape:cy="256"
     inkscape:document-units="px"
-    inkscape:current-layer="layer1"
-    showgrid="false"
-    fit-margin-top="0"
-    fit-margin-left="0"
-    fit-margin-right="0"
-    fit-margin-bottom="0"
-    inkscape:window-width="1366"
+    inkscape:pageopacity="0.0"
+    inkscape:pageshadow="2"
     inkscape:window-height="704"
+    inkscape:window-maximized="1"
+    inkscape:window-width="1366"
     inkscape:window-x="0"
     inkscape:window-y="27"
-    inkscape:window-maximized="1"/>
+    inkscape:zoom="0.35"
+    pagecolor="#ffffff"
+    showgrid="false"/>
   <metadata
     id="metadata3481">
     <rdf:RDF>
@@ -53,9 +53,9 @@
     </rdf:RDF>
   </metadata>
   <g
-    inkscape:label="Calque 1"
-    inkscape:groupmode="layer"
     id="layer1"
+    inkscape:groupmode="layer"
+    inkscape:label="Calque 1"
     transform="translate(-193.633,-276.3622)">
     <g
       id="g3013"
@@ -81,16 +81,16 @@
         points="256,433.399 256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 "
         style="fill:#ebebeb"/>
       <path
-        id="path2999"
         d="m 160,0 55,0 0,23 -32,0 0,23 32,0 0,23 -55,0 z"
+        id="path2999"
         inkscape:connector-curvature="0"/>
       <path
-        id="path3001"
         d="m 226,0 55,0 0,20 -32,0 0,4 32,0 0,46 -55,0 0,-21 32,0 0,-4 -32,0 z"
+        id="path3001"
         inkscape:connector-curvature="0"/>
       <path
-        id="path3003"
         d="m 292,0 55,0 0,20 -32,0 0,4 32,0 0,46 -55,0 0,-21 32,0 0,-4 -32,0 z"
+        id="path3003"
         inkscape:connector-curvature="0"/>
       <polygon
         id="polygon3005"

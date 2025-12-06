@@ -4,12 +4,13 @@
 <app-academic></app-academic>
 <app-projects></app-projects>
 <app-footer></app-footer>
-<button matFab
-        class="mat-fab-large"
-        (click)="scrollToTop()"
-        aria-label="Back to top"
-        class="button-to-top"
+<button (click)="scrollToTop()"
+        [class.hidden]="buttonVisibility==='hidden'"
         [class.visible]="buttonVisibility==='visible'"
-        [class.hidden]="buttonVisibility==='hidden'">
-        <mat-icon>arrow_upward</mat-icon></button>
+        aria-label="Back to top"
+        class="mat-fab-large"
+        class="button-to-top"
+        matFab>
+  <mat-icon>arrow_upward</mat-icon>
+</button>
 <router-outlet/>

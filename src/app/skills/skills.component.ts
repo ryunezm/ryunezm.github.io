@@ -3,7 +3,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {MatCard, MatCardContent, MatCardFooter, MatCardTitle} from "@angular/material/card";
 
 @Component({
-    selector: 'app-skills',
+  selector: 'app-skills',
   imports: [
     NgOptimizedImage,
     MatCard,
@@ -11,8 +11,8 @@ import {MatCard, MatCardContent, MatCardFooter, MatCardTitle} from "@angular/mat
     MatCardFooter,
     MatCardTitle,
   ],
-    templateUrl: './skills.component.html',
-    styleUrl: './skills.component.css'
+  templateUrl: './skills.component.html',
+  styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
 

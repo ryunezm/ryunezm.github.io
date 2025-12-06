@@ -5,7 +5,7 @@ import {PROJECT_DETAILS, Projects} from "./projects.enum";
 import {MatChip, MatChipSet} from "@angular/material/chips";
 
 @Component({
-    selector: 'app-projects',
+  selector: 'app-projects',
   imports: [
     MatCard,
     MatCardContent,
@@ -15,9 +15,9 @@ import {MatChip, MatChipSet} from "@angular/material/chips";
     MatButton,
     MatChipSet,
     MatChip,
-],
-    templateUrl: './projects.component.html',
-    styleUrl: './projects.component.css'
+  ],
+  templateUrl: './projects.component.html',
+  styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
   projects = Object.values(Projects)

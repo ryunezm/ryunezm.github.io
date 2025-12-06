@@ -481,7 +481,7 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
     all: unset;
   }
 
-  .header-bottom-photo, 
+  .header-bottom-photo,
   .header-top > ul {
     display: none;
   }
@@ -613,7 +613,7 @@ mat-card > mat-card-subtitle > mat-chip-set > mat-chip {
 }
 
 /* Special for aspects ratios between 0.749 and 1*/
-@media (aspect-ratio <= 749/1000) and (aspect-ratio < 1/1) and (orientation: portrait) {
+@media (aspect-ratio <= 749 / 1000) and (aspect-ratio < 1 / 1) and (orientation: portrait) {
   .header-top > ul {
     display: none;
   }
