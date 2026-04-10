@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {MatCard, MatCardActions, MatCardContent, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
 import {MatButton} from "@angular/material/button";
 import {PROJECT_DETAILS, Projects} from "./projects.enum";
@@ -17,6 +17,7 @@ import {MatChip, MatChipSet} from "@angular/material/chips";
     MatChip,
   ],
   templateUrl: './projects.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {

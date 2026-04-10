@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 import {MatCard, MatCardContent, MatCardFooter, MatCardTitle} from "@angular/material/card";
 
@@ -12,6 +12,7 @@ import {MatCard, MatCardContent, MatCardFooter, MatCardTitle} from "@angular/mat
     MatCardTitle,
   ],
   templateUrl: './skills.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {

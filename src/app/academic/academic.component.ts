@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {MatCard, MatCardContent, MatCardFooter, MatCardTitle} from "@angular/material/card";
 import {NgOptimizedImage} from "@angular/common";
 
@@ -13,6 +13,7 @@ import {NgOptimizedImage} from "@angular/common";
   ],
   standalone: true,
   templateUrl: './academic.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './academic.component.css'
 })
 export class AcademicComponent {

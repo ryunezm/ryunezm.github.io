@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {MatButton} from "@angular/material/button";
 import {NgOptimizedImage} from "@angular/common";
 import {MatIcon} from '@angular/material/icon';
@@ -11,6 +11,7 @@ import {MatIcon} from '@angular/material/icon';
     NgOptimizedImage
   ],
   templateUrl: './header.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
